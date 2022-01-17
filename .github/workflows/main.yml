@@ -54,7 +54,7 @@ jobs:
       uses: actions/upload-artifact@v2
       if: steps.merge.outputs.status == 'success' && !cancelled()
       with:
-        name: firmware
+        name: firmware.zip
         path: |
           ${{ env.FIRMWARE }}/esp8266_dap_full.bin
           ${{ env.FIRMWARE }}/esp8266_dap_app.bin
