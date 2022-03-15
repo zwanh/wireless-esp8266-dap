@@ -17,8 +17,8 @@ static struct {
     const char *ssid;
     const char *password;
 } wifi_list[] __attribute__((unused)) = {
-    {.ssid = "OTA", .password = "12345678"},
-    {.ssid = "DAP", .password = "12345678"},
+//     {.ssid = "OTA", .password = "12345678"},
+//     {.ssid = "DAP", .password = "12345678"},
     {.ssid = "Redmi_2-604_2G", .password = "zwh@19910704"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
@@ -32,10 +32,10 @@ static struct {
 #define MDNS_INSTANCE "DAP mDNS"
 //
 
-#define USE_STATIC_IP 0
+#define USE_STATIC_IP 1
 // If you don't want to specify the ip configuration, then ignore the following items.
-#define DAP_IP_ADDRESS 192, 168, 137, 123
-#define DAP_IP_GATEWAY 192, 168, 137, 1
+#define DAP_IP_ADDRESS 192, 168, 5, 123
+#define DAP_IP_GATEWAY 192, 168, 5, 1
 #define DAP_IP_NETMASK 255, 255, 255, 0
 //
 
