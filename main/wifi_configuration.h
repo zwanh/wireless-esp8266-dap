@@ -10,7 +10,7 @@
 #ifndef __WIFI_CONFIGURATION__
 #define __WIFI_CONFIGURATION__
 
-#define WIFI_SSID "2-604_2G"
+#define WIFI_SSID "Redmi_2-604_2G"
 #define WIFI_PASS "zwh@19910704"
 
 static struct {
@@ -19,7 +19,7 @@ static struct {
 } wifi_list[] __attribute__((unused)) = {
      {.ssid = "OTA", .password = "12345678"},
      {.ssid = "DAP", .password = "12345678"},
-    {.ssid = "2-604_2G", .password = "zwh@19910704"},
+    {.ssid = "Redmi_2-604_2G", .password = "zwh@19910704"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
 };
@@ -32,7 +32,7 @@ static struct {
 #define MDNS_INSTANCE "DAP mDNS"
 //
 
-#define USE_STATIC_IP 1
+#define USE_STATIC_IP 0
 // If you don't want to specify the ip configuration, then ignore the following items.
 #define DAP_IP_ADDRESS 192, 168, 5, 123
 #define DAP_IP_GATEWAY 192, 168, 5, 1
